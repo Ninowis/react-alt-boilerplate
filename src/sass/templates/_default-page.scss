@@ -1,0 +1,29 @@
+.default-page {
+
+  // layout
+  .content-container {
+    width: 90%;
+    max-width: $app-max-width;
+  }
+
+  // styles
+  .page-header {
+    background: #282c34;
+    color: white;
+    line-height: 1;
+    padding: 4rem;
+    text-align: center;
+
+    h1 {
+      color: $accent-color;
+    }
+
+    .lead-text {
+      font-size: 1.8rem;
+    }
+  }
+
+  .page-content {
+    margin: 2rem auto;
+  }
+}

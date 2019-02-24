@@ -1,0 +1,25 @@
+button,
+input[type="submit"],
+input[type="reset"],
+.button {
+  font-size: 1rem;
+  font-weight: bold;
+  line-height: 1.5;
+  padding: 1em 2rem;
+  color: $accent-bg;
+  background: $accent-color;
+  display: inline-block;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  outline: none;
+  transition: all 0.1s ease-in-out;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: $accent-color;
+    background: white;
+  }
+}

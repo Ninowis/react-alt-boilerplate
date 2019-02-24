@@ -2,14 +2,19 @@ const path = require("path");
 const webpack = require("webpack");
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = (env, argv) => {
+
+  let  isDevMode = argv.mode === 'development'
+
   return {
     mode: argv.mode,
     entry: [
       './src/index.js',
       './src/sass/app-styles.scss'
     ],
+    devtool:  isDevMode ? 'source-map' : 'none',
     module: {
       rules: [
         {
@@ -19,29 +24,22 @@ module.exports = (env, argv) => {
           options: { presets: ["@babel/env"] }
         },
         {
-          test: /\.scss$/,
+          test: /\.(css|scss)$/,
           use: [
-            {
-              loader: 'file-loader',
-              options: {
-                name: 'styles.css',
-                outputPath: 'css/',
-                publicPath: '../'
-              }
-            },
-            { loader: 'extract-loader' },
-            { loader: 'css-loader', options: { sourceMap: (argv.mode === 'development') } },
+            isDevMode ? { loader: 'style-loader', options: { sourceMap:  isDevMode } } : MiniCssExtractPlugin.loader,
+            { loader: 'css-loader', options: { sourceMap:  isDevMode } },
             {
               loader: 'postcss-loader',
               options: {
-                sourceMap: (argv.mode === 'development'),
+                sourceMap:  isDevMode,
                 plugins: () => [
-                  require('postcss-preset-env'),
-                  require('cssnano')
+                  require('postcss-css-reset')(),
+                  require('postcss-preset-env')(),
+                  require('cssnano')()
                 ]
               }
             },
-            { loader: 'sass-loader', options: { sourceMap: (argv.mode === 'development') } }
+            { loader: 'sass-loader', options: { sourceMap:  isDevMode } }
           ]
         },
         {
@@ -72,10 +70,14 @@ module.exports = (env, argv) => {
     plugins: [
       new webpack.HotModuleReplacementPlugin(),
       new CopyWebpackPlugin([
-        { from: './public/favicon.ico' }
+        { from: './public/favicon.ico' },
+        { from: './public/images', to: './images' }
       ]),
+      new MiniCssExtractPlugin({
+        filename: "css/styles.css"
+      }),
       new HtmlWebpackPlugin({
-        template: 'public/index.html',
+        template: './public/index.html',
         filename: 'index.html'
       })
     ]

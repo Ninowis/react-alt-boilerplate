@@ -1,6 +1,9 @@
+@reset-global pc;
+
 // Config
 @import '_config/breakpoints',
         '_config/colours',
+        '_config/sizes',
         '_config/vendors';
 
 // Core styles
@@ -19,7 +22,7 @@
 @import 'organisms/footer',
         'organisms/header';
 
-@import 'templates/grid-1-column';
+@import 'templates/default-page';
 
-@import 'pages/home';
+@import 'pages/about';
 

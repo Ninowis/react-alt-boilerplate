@@ -1,4 +1,8 @@
+* {
+    box-sizing: border-box;
+}
 body {
-    background: #20232a;
-    color: #fff;
+    background: $body-bg;
+    color: $body-color;
+    padding-top: 4rem;
 }
