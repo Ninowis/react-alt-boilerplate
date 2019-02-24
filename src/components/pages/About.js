@@ -11,16 +11,16 @@ const About = () => (
       <h2>About the file structure</h2>
       <p className="lead-text"><strong>Notice:</strong> this is <em>not</em> the recommended approach for single app projects.</p>
       <p>
-        This application structure breaks from recommended React practices and is highly tailored to personal choices and practices in terms of systems architecture.<br/>
+        This application structure breaks from recommended React practices and is the result of personal and maybe opinionated choices and practices in terms of systems architecture.<br/>
         As such, please don't consider it so much as a point of reference but merely as a starter kit yet to be adapted to your workflow and projects.
       </p>
       <p>
         Coming from a <a href="https://gulpjs.com/" title="visit Gulp.js website">Gulp</a> workflow, I've always used an external Sass structure for the styling of my projects, mostly relying on the <a href="https://sass-guidelin.es/#the-7-1-pattern" title="the 7-1 pattern on Sass guidelines">7-1 Pattern</a> and Jonathan Snook's <a href="https://smacss.com/" title="about SMACSS by Jonathan Snook">SMACSS</a> approach for engineering a versatile yet optimized pattern-library for complex applications.<br/>
-        With the growing trends of system architectures being based on micro-services, pattern-libraries have taken some serious new turns since SMACSS, but even though most of us have nowadays adopted <a href="http://atomicdesign.bradfrost.com/" title="Atomic Design Methodolgy by Brad Frost">Brad Frost's Atomic Design methodoly</a>, its actual implementation across a varied range of technologies often still rely on such external stylesheets.
+        With the growing trends of system architectures being based on micro-services, pattern-libraries have taken some serious new turns since SMACSS, but even though most of us have nowadays adopted <a href="http://atomicdesign.bradfrost.com/" title="Atomic Design Methodolgy by Brad Frost">Brad Frost's Atomic Design methodoly</a>, its actual implementation across multiple applications and a varied range of technologies often still rely on such independent stylesheets libraries.
       </p>
       <p>
-        Webpack has some very interesting tools to facilitate the transition towards fully independent components in frameworks like Vue or React (Styled Components, Scoped CSS modules).<br/>
-        This project is <strong>not</strong> an attempt at exploring them, but the voluntary intention to develop a React boilerplate compatible with an external and technology-agnostic pattern-library approach.<br/>
+        Webpack has some very interesting tools and features to facilitate the transition towards fully independent components in frameworks like Vue or React (Styled Components, Scoped CSS modules).<br/>
+        As much as I look forward to adopt them, this project is <strong>not</strong> an attempt at exploring them, but the voluntary intention to develop a React boilerplate compatible with an external and technology-agnostic pattern-library approach currently in use amongst other projects I am working on.<br/>
         Check my recommended readings below should you aim for a more standard single app approach.
       </p>
     </section>

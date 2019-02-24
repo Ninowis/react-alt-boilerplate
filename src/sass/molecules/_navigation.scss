@@ -30,8 +30,13 @@
     &:focus,
     &:active,
     &.selected {
+      background: $accent-bg;
       color: $accent-color;
       border-bottom: 2px solid $accent-color;
+    }
+    &.selected {
+      background: none;
+      cursor: default;
     }
   }
 }

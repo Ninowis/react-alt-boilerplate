@@ -23,12 +23,12 @@ A React + Webpack stack to kick start front-end developments, using an alternate
 
 **This is _not_ the recommended file structure approach for single app projects.**
 
-The stack of this boilerplate is highly tailored to my personal requirements in terms of system architecture. As such don't consider it so much as a point of reference but merely as a starter kit yet to be adapted to your workflow and projects.
+This application structure breaks from recommended React practices and is the result of personal and maybe opinionated choices and practices in terms of systems architecture. As such, please don't consider it so much as a point of reference but merely as a starter kit yet to be adapted to your workflow and projects.
 
 Coming from a [Gulp](https://gulpjs.com/) workflow, I've always used an external Sass structure for the styling of my projects, mostly relying on the [7-1 Pattern](https://sass-guidelin.es/#the-7-1-pattern) and Jonathan Snook's [SMACSS](https://smacss.com/) approach for engineering a versatile yet optimized pattern-library for complex applications.
-With the growing trends of system architectures being based on micro-services, pattern-libraries have taken some serious new turns since SMACSS, but even though most of us have nowadays adopted [Brad Frost's Atomic Design methodoly](http://atomicdesign.bradfrost.com/), its actual implementation across a varied range of technologies often still rely on such external stylesheets/pattern-libraries.
+With the growing trends of system architectures being based on micro-services, pattern-libraries have taken some serious new turns since SMACSS, but even though most of us have nowadays adopted [Brad Frost's Atomic Design methodoly](http://atomicdesign.bradfrost.com/), its actual implementation across multiple applications and a varied range of technologies often still rely on such independent stylesheets libraries.
 
-Webpack has some very interesting tools to facilitate the transition towards fully independent components in frameworks like Vue or React (Styled Components, Scoped CSS modules).
+Webpack has some very interesting tools and features to facilitate the transition towards fully independent components in frameworks like Vue or React (Styled Components, Scoped CSS modules).
 This project is **not** an attempt at exploring them, but the voluntary intention to develop a React boilerplate compatible with an external and technology-agnostic pattern-library approach.
 Check my recommended readings in the About page of this app should you aim for a more efficient single app approach.
 

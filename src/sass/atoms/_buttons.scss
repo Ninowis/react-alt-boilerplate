@@ -20,6 +20,6 @@ input[type="reset"],
   &:focus,
   &:active {
     color: $accent-color;
-    background: white;
+    background: $accent-bg;
   }
 }

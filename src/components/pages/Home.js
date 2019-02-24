@@ -4,7 +4,8 @@ import Button from '../atoms/Button'
 
 const Home = () => (
   <PageTemplate
-    pageTitle="The React Alt Boilerplate"
+    pageClass="home-page"
+    pageTitle="React Alt Boilerplate"
     leadText="An alternative to React standard file structure"
   >
     <p class="lead-text">

@@ -15,7 +15,8 @@
 //@import '../node_modules/<module_name>';
 
 // Atomic Design
-@import 'atoms/buttons';
+@import 'atoms/buttons',
+        'atoms/lists';
 
 @import 'molecules/navigation';
 
@@ -24,5 +25,5 @@
 
 @import 'templates/default-page';
 
-@import 'pages/about';
+@import 'pages/home';
 
