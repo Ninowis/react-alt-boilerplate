@@ -1,5 +1,5 @@
-# React App Boilerplate
-A React + Webpack stack to kick start front-end developments.
+# React Alt Boilerplate
+A React + Webpack stack to kick start front-end developments, using an alternate file structure to React standards which abstracts Sass styles from the components in favor of a more common cascading approach.
 
 
 ## Pre-requisites
@@ -21,7 +21,7 @@ A React + Webpack stack to kick start front-end developments.
 
 ## Important Notice
 
-**This is _not_ the recommended React approach for single app projects.**
+**This is _not_ the recommended file structure approach for single app projects.**
 
 The stack of this boilerplate is highly tailored to my personal requirements in terms of system architecture. As such don't consider it so much as a point of reference but merely as a starter kit yet to be adapted to your workflow and projects.
 

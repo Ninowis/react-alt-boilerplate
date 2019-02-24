@@ -13,19 +13,19 @@
     text-decoration: none;
   }
 
-  .logo {
+  .app-logo {
     display: contents;
 
     img {
       max-height: 60%;
       width: auto;
     }
+  }
 
-    span {
-      font-size: 1.3rem;
-      font-weight: 600;
-      color: $accent-color;
-    }
+  .app-title {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: $accent-color;
   }
 
   .options {
