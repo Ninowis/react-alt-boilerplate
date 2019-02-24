@@ -10,7 +10,7 @@ const Header = () => (
     <span className="app-title">React Alt Boilerplate</span>
     <Navigation />
     <div className="options">
-      <Button href="https://github.com/Ninowis/react-alt-boilerplate" label="Clone on GitHub"/>
+      <Button href="https://github.com/Ninowis/react-alt-boilerplate" label="Fork on GitHub"/>
     </div>
   </header>
 )
