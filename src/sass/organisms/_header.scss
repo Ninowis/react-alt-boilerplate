@@ -15,11 +15,7 @@
 
   .app-logo {
     display: contents;
-
-    img {
-      max-height: 60%;
-      width: auto;
-    }
+    svg { height: 2rem; }
   }
 
   .app-title {
@@ -39,6 +35,14 @@
   }
 
   @include breakpoint(mobileonly) {
-		.logo span { display: none; }
+		.app-title { display: none; }
+  }
+  
+  @include breakpoint(phablet) {
+		.app-title { font-size: 1.2rem; }
 	}
+
+  @include breakpoint(tablet) {
+    .app-title { font-size: 1.3rem; }
+  }
 }

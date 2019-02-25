@@ -1,11 +1,13 @@
 import React from 'react'
 import Button from '../atoms/Button'
 import Navigation from '../molecules/Navigation'
+import InlineSVG from 'svg-inline-react'
+import logo from '../../svg/react-logo.svg'
 
 const Header = () => (
   <header className="header">
     <a className="app-logo" href="https://reactjs.org/" title="Visit React website">
-      <img src="./images/react-logo.svg"/>
+      <InlineSVG src={logo} element='span'/>
     </a>
     <span className="app-title">React Alt Boilerplate</span>
     <Navigation />

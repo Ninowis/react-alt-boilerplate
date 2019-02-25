@@ -44,6 +44,7 @@ module.exports = (env, argv) => {
         },
         {
           test: /.(ttf|otf|eot|svg|woff(2)?)(\?[a-z0-9]+)?$/,
+          include: path.resolve(__dirname, 'public/fonts'),
           use: {
             loader: "file-loader",
             options: {
@@ -52,6 +53,14 @@ module.exports = (env, argv) => {
               publicPath: '../fonts/'
             }
           }
+        },
+        {
+          test: /\.svg$/,
+          exclude: [
+            path.resolve(__dirname, 'node_modules'),
+            path.resolve(__dirname, 'public/fonts')
+          ],
+          loader: 'svg-inline-loader'
         }
       ]
     },
